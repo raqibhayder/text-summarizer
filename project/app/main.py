@@ -19,7 +19,7 @@ register_tortoise(
 @app.get("/ping")
 async def pong(settings: Settings = Depends(get_settings)):
     return {
-        "message": "Hello World",
+        "ping": "pong!",
         "environment": settings.environment,
         "testing": settings.testing,
     }
