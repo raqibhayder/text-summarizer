@@ -13,7 +13,7 @@ Asynchronous text summarization API using FastAPI.
 | /summaries/:id | PUT | UPDATE | Update a summary |
 | /summaries/:id | DELETE | DELETE | Delete a summary |
 
-## Tech
+## Stack
 - **Framework** - [FastAPI](https://fastapi.tiangolo.com/)
 - **Database** - [PostgreSQL](https://www.postgresql.org/)
 - **ORM** - [Tortoise ORM](https://tortoise-orm.readthedocs.io/en/latest/)
