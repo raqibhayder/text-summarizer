@@ -24,7 +24,6 @@ Asynchronous text summarization API using FastAPI.
 - **Containerization** - [Docker](https://www.docker.com/)
 - **CI/CD** - [GitHub Actions](https://github.com/features/actions)
 - **Deployment** - [Heroku](https://www.heroku.com/)
-- **Code Coverage** - [Coverage.py](https://coverage.readthedocs.io/en/7.2.5/)
-  - **pytest-cov** - [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
+- **Code Coverage** - [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
 - **Code Quality** - [flake8](https://flake8.pycqa.org/en/latest/)
 - **Code Formatting** - [black](https://black.readthedocs.io/en/stable/)
