@@ -9,6 +9,7 @@ def test_create_summary(test_app_with_db, monkeypatch):
     # GIVEN
     def mock_generate_summary(summary_id: int, url: str) -> None:
         return None
+
     monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
 
     # WHEN
@@ -48,6 +49,7 @@ def test_read_summary(test_app_with_db, monkeypatch):
     # GIVEN
     def mock_generate_summary(summary_id: int, url: str) -> None:
         return None
+
     monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
 
     response = test_app_with_db.post(
@@ -71,6 +73,7 @@ def test_read_all_summaries(test_app_with_db, monkeypatch):
     # GIVEN
     def mock_generate_summary(summary_id: int, url: str) -> None:
         return None
+
     monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
 
     response = test_app_with_db.post(
@@ -91,6 +94,7 @@ def test_remove_summary(test_app_with_db, monkeypatch):
     # GIVEN
     def mock_generate_summary(summary_id: int, url: str) -> None:
         return None
+
     monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
 
     response = test_app_with_db.post(
@@ -110,6 +114,7 @@ def test_update_summary(test_app_with_db, monkeypatch):
     # GIVEN
     def mock_generate_summary(summary_id: int, url: str) -> None:
         return None
+
     monkeypatch.setattr(summaries, "generate_summary", mock_generate_summary)
 
     response = test_app_with_db.post(

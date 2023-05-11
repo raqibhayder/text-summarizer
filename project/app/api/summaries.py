@@ -3,19 +3,21 @@ from starlette.background import BackgroundTasks
 
 from app.api import crud
 from app.models.tortoise import SummarySchema
+from app.summarizer import generate_summary
 
 from app.models.pydantic import (  # isort:skip
     SummaryPayloadSchema,
     SummaryResponseSchema,
     SummaryUpdatePayloadSchema,
 )
-from app.summarizer import generate_summary
 
 router = APIRouter()
 
 
 @router.post("/", response_model=SummaryResponseSchema, status_code=201)
-async def create_summary(payload: SummaryPayloadSchema, background_tasks: BackgroundTasks) -> SummaryResponseSchema:
+async def create_summary(
+    payload: SummaryPayloadSchema, background_tasks: BackgroundTasks
+) -> SummaryResponseSchema:
     summary_id = await crud.post(payload)
 
     # TODO: what happens if the background task fails; consistency issue?
