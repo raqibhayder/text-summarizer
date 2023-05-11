@@ -1,7 +1,8 @@
 Text Summarizer
 ==============================
 
-![Continuous Integration and Delivery](https://github.com/raqibhayder/text-summarizer/workflows/Continuous%20Integration%20and%20Delivery/badge.svg?branch=main)
+![CI/CD](https://github.com/raqibhayder/text-summarizer/workflows/Continuous%20Integration%20and%20Delivery/badge.svg?
+branch=main)
 
 
 Asynchronous text summarization API using FastAPI.
